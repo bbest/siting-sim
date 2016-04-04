@@ -40,15 +40,15 @@ ui = dashboardPage(
       tabItem(
         tabName = 'siting',
         
-        fluidRow( # boxes need to be put in a row (or column)
+        fluidRow(
       
           box(
-            title = 'Tradeoff Plot', status = 'primary', collapsible=T, width=6,
+            title = 'Tradeoff Plot', status = 'primary', collapsible=T, width=8,
             plotOutput(
               'utility_plot', height = 500)),
           
           box(
-            title = 'Controls', status = 'primary', collapsible=T,
+            title = 'Controls', status = 'primary', collapsible=T, width=4,
             
             withMathJax(helpText(
 '$$
