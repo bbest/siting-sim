@@ -51,12 +51,12 @@ ui = dashboardPage(
             title = 'Controls', status = 'primary', collapsible=T,
             
             withMathJax(helpText(
-              '$$
-              u = a * W - (1 -a ) * B
-              $$')),
+'$$
+u = \\alpha * W - (1 - \\alpha ) * B
+$$')),
             
             sliderInput(
-              'a_range', 'Range of alpha:',
+              'a_range', 'Range of \\( \\alpha \\):',
               min = 0, max = 1, value = c(0, 1), dragRange=T) ))),
       
       tabItem(
